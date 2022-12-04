@@ -14,7 +14,7 @@ function getScore(line) {
 
   for (let index = 0; index < chars.length; index++) {
     if (compartments[1].includes(chars[index])) {
-      const itemAsciiCode = Number(chars[index].charCodeAt(0))
+      const itemAsciiCode = chars[index].charCodeAt(0)
       if (itemAsciiCode > 90) score += itemAsciiCode + 26 - 122
       else score += itemAsciiCode + 52 - 90
       break;
